@@ -55,7 +55,7 @@ MonoBehaviour:
   frequency: 0
   interactable: {fileID: 8220471242600298266}
   audioSource: {fileID: 5752087421902303470}
-  sineGenerator: {fileID: 669265671404970692}
+  sampleGenerator: {fileID: 4472609769494101235}
   synthOut: {fileID: 2754322182315237964}
 --- !u!114 &8220471242600298266
 MonoBehaviour:
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6763959305788560888}
-  - component: {fileID: 669265671404970692}
+  - component: {fileID: 4472609769494101235}
   - component: {fileID: 2754322182315237964}
   - component: {fileID: 5752087421902303470}
   m_Layer: 0
@@ -233,7 +233,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1404767326218921074}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &669265671404970692
+--- !u!114 &4472609769494101235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,9 +242,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 747070246231555474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3c6542b4420ca4693e30964259ffa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 18bbd87183abdd047b3291c73ab0a4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveformType: 3
   frequency: 261.62
   amplitude: 0.5
 --- !u!114 &2754322182315237964
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcf087be1cb01647aeb72d907a5882c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  provider: {fileID: 669265671404970692}
+  provider: {fileID: 4472609769494101235}
 --- !u!82 &5752087421902303470
 AudioSource:
   m_ObjectHideFlags: 0

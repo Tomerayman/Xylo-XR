@@ -1,4 +1,5 @@
 using MusicXR;
+using MusicXR.Native;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +10,14 @@ public class SynthKey : MonoBehaviour
     public float frequency;
     public XRSimpleInteractable interactable;
     public AudioSource audioSource;
-    public SineGenerator sineGenerator;
+    public SampleGenerator sampleGenerator;
     public SynthOut synthOut;
 
 
     public void SetFrequency(float freq)
     {
         frequency = freq;
-        sineGenerator.frequency = freq;
+        sampleGenerator.frequency = freq;
     }
 
     private void OnEnable()
