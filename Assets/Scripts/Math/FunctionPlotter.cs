@@ -9,6 +9,7 @@ namespace MusicXR.Math.Plot
     public class FunctionPlotter : MonoBehaviour
     {
      
+
     }
 }
 

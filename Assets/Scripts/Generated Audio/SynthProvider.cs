@@ -1,11 +1,13 @@
 using MusicXR.Native;
 using MusicXR.Native.Buffers;
+using System;
 using UnityEngine;
 
 namespace MusicXR
 {
     public abstract class SynthProvider : MonoBehaviour
     {
+        [NonSerialized] public bool isActive;
         private NativeBox<SynthBuffer> _buffer;
 
         public void FillBuffer(float[] buffer)

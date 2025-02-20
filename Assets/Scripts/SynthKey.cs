@@ -9,10 +9,8 @@ public class SynthKey : MonoBehaviour
 {
     public float frequency;
     public XRSimpleInteractable interactable;
-    public AudioSource audioSource;
     public SampleGenerator sampleGenerator;
-    public SynthOut synthOut;
-
+    public AudioOut audioOut;
 
     public void SetFrequency(float freq)
     {
@@ -34,9 +32,9 @@ public class SynthKey : MonoBehaviour
 
 
     private void OnPressEnter(BaseInteractionEventArgs e = null)
-        => audioSource.enabled = true;
+        => sampleGenerator.isActive = true;
     
     private void OnPressExit(BaseInteractionEventArgs e = null)
-        => audioSource.enabled = false;
+        => sampleGenerator.isActive = false;
 
 }
